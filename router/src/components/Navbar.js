@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,13 +8,13 @@ const Navbar = () => {
         <a className="brand-logo">Poke'Times</a>
         <ul className="right">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </div>
@@ -22,3 +23,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+/* 
+Link and Navlink do not send requests to a server (unlike the 'a' tags)
+NavLink automatically adds class 'active' to a tag after we click on it. We can then style the active tags any way we want. See index.css
+
+*/
