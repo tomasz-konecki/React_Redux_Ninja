@@ -8,3 +8,15 @@ body {
   color: gold;
   border-bottom: 2px solid lightgray;
 }
+
+.home .card img {
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  opacity: 0.6;
+}
+
+.home .card {
+  overflow: hidden;
+  padding-left: 80px;
+}
